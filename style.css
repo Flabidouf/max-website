@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(13, 98, 225);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  border: 7px dotted rgb(249, 212, 6);
+  padding: 10px;
+  margin: 30px 0;
+}
+
+.seciton-1 {
+  width: 100%;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px rgb(50, 45, 45);
+  margin: 50px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+.block p {
+  padding: 20px;
+  text-align: center;
+}
+.block button {
+  background: none;
+  border: none;
+}
+
+@media only screen and (max-width: 765px) {
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+.wrapper {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.wrapper::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.wrapper::before {
+  left: 0;
+  top: 0;
+}
+.wrapper .slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: 1000px;
+}
+.wrapper .slide {
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
