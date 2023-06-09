@@ -53,13 +53,18 @@ header {
 }
 
 @media only screen and (max-width: 765px) {
+  body {
+    width: 600px;
+  }
+  .wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
   .block {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  article {
-    width: 100%;
+    padding: 20px;
   }
 }
 @keyframes scroll {
@@ -91,7 +96,7 @@ header {
 .wrapper .slide-track {
   animation: scroll 30s linear infinite;
   display: flex;
-  width: 1000px;
+  width: 600px;
 }
 .wrapper .slide {
   height: auto;

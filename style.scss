@@ -61,16 +61,24 @@ header {
 }
 
 @media only screen and (max-width:765px){
+
+    body {
+        width:600px;
+    }
+    //Enlève l'excédant sur la droite
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+
+    }
    .block {  
         display:flex;
         flex-direction: column;
         width:100%;
+        padding: 20px;
     
    }
-   article {
-    width:100%;
-    
-   }
+ 
 
     
 
@@ -113,7 +121,7 @@ $animationSpeed: 30s;
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
-		width: calc(250px * 4);
+		width: 600px;
         
 	}
 	
