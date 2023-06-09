@@ -41,6 +41,7 @@ header {
 .block p {
   padding: 20px;
   text-align: center;
+  display: flex;
 }
 .block button {
   background: none;
