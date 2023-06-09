@@ -25,7 +25,7 @@ header {
   margin: 30px 0;
 }
 
-.seciton-1 {
+.section-1 {
   width: 100%;
 }
 
@@ -47,11 +47,19 @@ header {
   background: none;
   border: none;
 }
+.block img {
+  display: flex;
+  justify-content: center;
+}
 
 @media only screen and (max-width: 765px) {
   .block {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+  article {
+    width: 100%;
   }
 }
 @keyframes scroll {
