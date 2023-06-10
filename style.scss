@@ -31,10 +31,22 @@ header {
 .section-1 {
     width:100%
 }
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+.ahyug {
+    background-color: white;
+    font-size: 40px;
+}
 
 .block {
     display:flex;
     align-items: center;
+    justify-content: center;
     background-color: white;
     box-shadow: 10px 10px rgb(50, 45, 45);;
     margin: 50px 0;
@@ -49,9 +61,18 @@ header {
     
     }
 
-    button {
+    .p-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input {
        background: none;
-       border: none;
+       border: 2px solid black;
+       padding:5px;
+       width:auto;
+       font-size: 30px;
+       
        
     }
     img {
@@ -92,7 +113,7 @@ $animationSpeed: 30s;
 // Animation
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 4))}
+	100% { transform: translateX(calc(-250px * 11))}
 }
 
 
